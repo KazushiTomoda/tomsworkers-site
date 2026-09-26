@@ -177,7 +177,7 @@ p{line-break:strict;text-wrap:pretty}
 .profile dl{margin:0;border-top:1px solid var(--line)}.profile dl div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}.profile dt{font-size:12px;font-weight:700;color:#667085}.profile dd{margin:0;font-size:15px;color:#344054}
 
 .contact{background:linear-gradient(135deg,#0b1220,#121d31);color:white}
-.contact-panel{display:grid;grid-template-columns:1.05fr .95fr;gap:92px;align-items:start}.contact h2{color:white}.contact-copy{padding-top:20px;color:#cbd5e1}.contact-copy p{margin:0 0 22px}.button-disabled{opacity:.66;cursor:not-allowed;border:0}
+.contact-panel{display:grid;grid-template-columns:1.05fr .95fr;gap:92px;align-items:start}.contact h2{color:white}.contact-copy{padding-top:20px;color:#cbd5e1}.contact-copy p{margin:0 0 22px}.contact-email{margin:14px 0 0!important;font-size:14px}.contact-email a{color:#ffd38a;text-decoration:underline;text-decoration-color:rgba(255,211,138,.45);text-underline-offset:4px}.contact-email a:hover{color:white}
 
 .site-footer{background:#070d17;color:white;padding:46px 0}.footer-grid{display:grid;grid-template-columns:1fr auto auto;align-items:end;gap:34px}.footer-grid strong{font-size:20px;letter-spacing:-.03em}.footer-grid p{margin:4px 0 0;color:#8b98aa;font-size:13px}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:11px;font-weight:700;color:#c7d0dc}.footer-grid small{color:#657287}
 
