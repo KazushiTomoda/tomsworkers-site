@@ -253,8 +253,8 @@
         <div class="contact-copy">
           <p>「何から始めればいいか分からない」<br>「一度、考えを整理したい」</p>
           <p>そんな段階でも構いません。Tom'sWorkersがお役に立てそうなことがあれば、ご相談ください。</p>
-          <a class="button button-light" href="mailto:info@tomsworkers.com?subject=Tom%27sWorkers%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%E3%83%BB%E5%B1%8B%E5%8F%B7%EF%BC%9A%0A%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%EF%BC%9A%0A">メールで問い合わせる <span aria-hidden="true">↗</span></a>
-          <p class="contact-email"><a href="mailto:info@tomsworkers.com">info@tomsworkers.com</a></p>
+          <a class="button button-light" data-ga-contact="contact_button" href="mailto:info@tomsworkers.com?subject=Tom%27sWorkers%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%E3%83%BB%E5%B1%8B%E5%8F%B7%EF%BC%9A%0A%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%EF%BC%9A%0A">メールで問い合わせる <span aria-hidden="true">↗</span></a>
+          <p class="contact-email"><a data-ga-contact="contact_email" href="mailto:info@tomsworkers.com">info@tomsworkers.com</a></p>
         </div>
       </div>
     </section>
@@ -275,5 +275,21 @@
       <small>© 2026 Tom'sWorkers</small>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[data-ga-contact]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'contact_email_click', {
+              contact_location: link.dataset.gaContact,
+              link_url: link.getAttribute('href'),
+              link_text: link.textContent.trim()
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
