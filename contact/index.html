@@ -29,51 +29,47 @@
     <section class="subpage-hero"><div class="shell">
       <p class="section-label">TOM'SWORKERS</p>
       <h1>お問い合わせ</h1>
-      <p>AI・Webに関するご相談を、ひとつの窓口でお受けします。</p>
+      <p>AI・Webに関するご相談は、メールで受け付けています。</p>
     </div></section>
-    <div class="shell subpage-content "><div class="subpage-grid">
-  <div class="subpage-card">
-    <h2>お問い合わせフォーム</h2>
-    <p class="form-lead">サービスについてのご相談やご質問を承ります。必要事項をご入力ください。<br>「必須」の項目以外は任意です。</p>
-    <!-- CONFIG: Replace REPLACE_WITH_FORM_ID with the verified Formspree form ID; until then the submit button remains disabled. -->
-    <form id="contact-form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST" aria-describedby="form-status">
-      <div class="form-honeypot" aria-hidden="true"><label for="website-check">こちらは空欄にしてください</label><input id="website-check" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
-      <input type="hidden" name="問い合わせ経路" id="contact-source" value="公式サイト">
-      <input type="hidden" name="相談プラン" id="contact-plan" value="">
-      <div class="form-grid">
-        <div class="field"><label class="field-label" for="company">社名・屋号</label><input class="form-input" id="company" name="社名・屋号" type="text" maxlength="120" autocomplete="organization"></div>
-        <fieldset class="field fieldset"><legend class="fieldset-legend">法人・個人 <span class="required">必須</span></legend><div class="radio-row">
-          <label class="radio-option"><input type="radio" name="法人・個人" value="法人" required> 法人</label>
-          <label class="radio-option"><input type="radio" name="法人・個人" value="個人" required> 個人</label>
-        </div></fieldset>
-        <div class="field"><label class="field-label" for="industry">業種・事業内容</label><input class="form-input" id="industry" name="業種・事業内容" type="text" maxlength="160" autocomplete="off"></div>
-        <div class="field"><label class="field-label" for="address">住所（任意）</label><input class="form-input" id="address" name="住所" type="text" maxlength="200" autocomplete="street-address"><small class="form-help">都道府県・市区町村だけでも構いません。</small></div>
-        <div class="field"><label class="field-label" for="position">役職・職種</label><input class="form-input" id="position" name="役職・職種" type="text" maxlength="100" autocomplete="organization-title"></div>
-        <div class="field"><label class="field-label" for="name">氏名 <span class="required">必須</span></label><input class="form-input" id="name" name="name" type="text" maxlength="100" autocomplete="name" required></div>
-        <div class="field"><label class="field-label" for="email">メールアドレス <span class="required">必須</span></label><input class="form-input" id="email" name="email" type="email" maxlength="180" autocomplete="email" required></div>
-        <div class="field"><label class="field-label" for="service">お問い合わせ項目 <span class="required">必須</span></label><select class="form-select" id="service" name="お問い合わせ項目" required>
-          <option value="" selected disabled>お問い合わせ項目を選択</option>
-          <option value="ChatGPT広告支援">ChatGPT広告支援</option>
-          <option value="ウェブ広告支援">ウェブ広告支援</option>
-          <option value="LP制作">LP制作</option>
-          <option value="MEO対策">MEO対策</option>
-          <option value="AIブランド調査">AIブランド調査</option>
-          <option value="その他">その他</option>
-        </select></div>
-        <div class="field field-full"><label class="field-label" for="message">お問い合わせ内容 <span class="required">必須</span></label><textarea class="form-textarea" id="message" name="message" minlength="5" maxlength="5000" placeholder="現在の状況、ご相談内容、ご希望などをご記入ください。" required></textarea></div>
-        <div class="field field-full"><label class="form-consent"><input id="consent" name="個人情報の取扱いへの同意" type="checkbox" value="同意する" required><span><a href="/privacy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>（別タブで開きます）を確認し、個人情報の取扱いに同意します。 <span class="required">必須</span></span></label></div>
+    <div class="shell subpage-content contact-mail-page">
+      <div class="subpage-grid contact-mail-layout">
+        <section class="subpage-card contact-mail-card" aria-labelledby="email-contact-title">
+          <p class="contact-mail-eyebrow">CONTACT BY EMAIL</p>
+          <h2 id="email-contact-title">ご相談は、メールから。</h2>
+          <p class="contact-mail-lead">サービスに関するご質問やご相談は、下記のメールアドレスまでお寄せください。まだ具体的な依頼内容が決まっていなくても大丈夫です。</p>
+          <div class="contact-mail-target">
+            <span class="contact-mail-label">お問い合わせ先</span>
+            <p class="contact-mail-address">info@tomsworkers.com</p>
+            <div class="contact-mail-actions">
+              <a id="contact-compose" class="contact-mail-primary" href="mailto:info@tomsworkers.com?subject=Tom%27sWorkers%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールを作成する</a>
+              <button id="copy-email" type="button" class="contact-mail-copy" aria-describedby="copy-status">メールアドレスをコピー</button>
+            </div>
+            <p id="copy-status" class="contact-mail-status" role="status" aria-live="polite"></p>
+            <p class="contact-mail-help">「メールを作成する」は端末に設定されたメールアプリを開きます。Outlook等を起動したくない場合は、アドレスをコピーしてWebメールから送信できます。</p>
+          </div>
+          <div class="contact-mail-divider" aria-hidden="true"></div>
+          <h3>お問い合わせ時にお知らせいただきたいこと</h3>
+          <ul class="contact-mail-checklist">
+            <li>お名前・社名や屋号（任意）</li>
+            <li>ご相談したいサービス</li>
+            <li>ご相談内容（現状・ご希望など）</li>
+          </ul>
+          <p class="contact-mail-privacy">お問い合わせに伴う個人情報は、<a href="/privacy/">プライバシーポリシー</a>に沿って取り扱います。</p>
+        </section>
+        <aside class="subpage-aside contact-services" aria-labelledby="contact-services-title">
+          <h2 id="contact-services-title">ご相談いただけるサービス</h2>
+          <p>各サービスの詳しい内容は、それぞれのページをご覧ください。</p>
+          <nav aria-label="サービス一覧" class="contact-service-links">
+            <a href="/chatgpt-ads/">ChatGPT広告支援</a>
+            <a href="/google-ads/">ウェブ広告支援（Google広告）</a>
+            <a href="/lp/">LP制作</a>
+            <a href="/meo/">MEO対策</a>
+            <a href="https://aibrandcheck.tomsworkers.com/">AIブランド調査</a>
+          </nav>
+          <p class="contact-service-note">その他のAI・Web関連のご相談も受け付けています。</p>
+        </aside>
       </div>
-      <div class="form-actions"><button class="form-submit" id="form-submit" type="submit" disabled>送信する</button></div>
-      <p class="form-state" id="form-status" role="status" aria-live="polite">フォーム送信の準備中です。接続完了までは、右側のメールアドレスからお問い合わせください。</p>
-      <p class="form-privacy-note">送信には外部のフォーム受付サービス（Formspree）を使用します。接続完了後、送信内容はTom'sWorkersの問い合わせ対応に利用されます。</p>
-    </form>
-  </div>
-  <aside class="subpage-aside"><h2>直接メールでも受け付けます</h2>
-    <p>メールでのお問い合わせをご希望の場合は、次のアドレスまでお送りください。</p>
-    <p><a href="mailto:info@tomsworkers.com">info@tomsworkers.com</a></p>
-    <p>将来的にはLINE公式アカウントなども検討しています。現在はフォームとメールをお問い合わせ窓口とします。</p>
-  </aside>
-</div></div>
+    </div>
   </main>
   <footer class="site-footer"><div class="shell footer-grid">
     <div><strong>Tom'sWorkers</strong><p>次の一歩を、照らす。</p></div>
