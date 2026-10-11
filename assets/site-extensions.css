@@ -1,0 +1,71 @@
+/* Tom'sWorkers official-site extensions; original style.css remains unchanged. */
+:root{--tw-blue:#2563eb;--tw-cyan:#06b6d4}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #06b6d4;outline-offset:3px}
+#main:focus{outline:none}
+.header-contact{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;border-radius:999px;background:#0b1220;color:white;padding:10px 17px;font-weight:750;font-size:12px;min-height:44px;transition:background .2s ease}
+.header-contact:hover{background:#2563eb}
+.service-portfolio{position:relative;z-index:1;margin-top:76px}
+.service-portfolio-intro{max-width:750px;margin-bottom:26px}
+.service-portfolio-intro h3{font-size:clamp(29px,3.7vw,45px);line-height:1.35;margin:0 0 14px;letter-spacing:-.035em;color:white}
+.service-portfolio-intro p:last-child{color:#cbd5e1;margin:0;font-size:15px}
+.service-portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.service-portfolio-card{min-width:0;display:flex;flex-direction:column;background:#fff;border:1px solid #dbe4f2;border-radius:20px;padding:30px;color:#172033;box-shadow:0 12px 34px rgba(0,0,0,.10)}
+.service-category{color:#3157c8;font-size:10px;font-weight:800;letter-spacing:.17em}
+.service-portfolio-card h4{color:#0b1220;font-size:25px;line-height:1.4;letter-spacing:-.03em;margin:12px 0 10px}
+.service-portfolio-card p{color:#4b586d;font-size:14px;margin:0 0 23px;flex:1}
+.service-portfolio-card a{display:flex;justify-content:center;align-items:center;min-height:48px;padding:10px 18px;background:var(--tw-blue);color:#fff;font-size:13px;font-weight:800;border-radius:11px;text-align:center;transition:background .2s ease,transform .2s ease}
+.service-portfolio-card a:hover{background:#1d4ed8;transform:translateY(-1px)}
+.footer-links a{min-height:28px;display:inline-flex;align-items:center}
+
+/* Shared content and contact pages. */
+.subpage-main{background:#f6f8fb;min-height:65vh}
+.subpage-main .subpage-hero{background:linear-gradient(135deg,#0b1220,#182941);color:#fff;padding:72px 0 66px}
+.subpage-hero .section-label{color:#f6bf5b}
+.subpage-hero h1{color:#fff;font-size:clamp(32px,4.8vw,54px);letter-spacing:-.035em;line-height:1.25;margin:0 0 20px}
+.subpage-hero p:last-child{margin:0;color:#d8e2f0;max-width:770px;line-height:1.85}
+.subpage-content{padding:50px 0 90px}
+.subpage-card{background:#fff;border:1px solid #e3eaf3;border-radius:20px;padding:clamp(24px,4vw,50px);box-shadow:0 18px 48px rgba(13,27,52,.04)}
+.subpage-card h2{color:#0b1220;font-size:clamp(22px,3vw,29px);margin:0 0 18px;line-height:1.4}
+.subpage-card h3{color:#0b1220;font-size:19px;margin:31px 0 10px}
+.subpage-card p,.subpage-card li{color:#475467;font-size:15px}
+.subpage-card a:not(.button){text-decoration:underline;text-underline-offset:4px;color:#1d4ed8}
+.subpage-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,.65fr);gap:25px;align-items:start}
+.subpage-aside{background:#fff;border:1px solid #e3eaf3;border-radius:18px;padding:24px}
+.subpage-aside h2{font-size:20px;margin:0 0 12px;color:#0b1220}
+.subpage-aside p{font-size:14px;color:#475467;margin:0 0 14px}
+.subpage-aside a{color:#1d4ed8;text-decoration:underline;overflow-wrap:anywhere}
+.form-lead{font-size:15px;color:#475467;margin:0 0 26px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 18px}
+.field{min-width:0;display:flex;flex-direction:column;gap:8px}
+.field-full{grid-column:1/-1}
+.field-label,.fieldset-legend{font-weight:800;color:#19283d;font-size:13px}
+.fieldset{margin:0;border:0;padding:0;min-width:0}
+.radio-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:8px}
+.radio-option{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#344054;cursor:pointer;min-height:35px}
+.radio-option input{width:18px;height:18px;accent-color:#2563eb}
+.form-input,.form-textarea,.form-select{width:100%;border:1px solid #b7c3d3;border-radius:9px;background:#fff;color:#0b1220;min-height:47px;padding:10px 13px;font:inherit;font-size:15px;line-height:1.5}
+.form-textarea{min-height:160px;resize:vertical}
+.form-help{font-size:12px;color:#667085}
+.required{font-size:11px;color:#a92828;margin-left:6px}
+.form-consent{display:flex;gap:11px;align-items:start;font-size:13px;line-height:1.75;color:#344054;margin-top:8px}
+.form-consent input{margin-top:4px;accent-color:#2563eb;min-width:18px;min-height:18px}
+.form-actions{margin-top:22px}
+.form-submit{appearance:none;border:0;border-radius:10px;background:#2563eb;color:#fff;padding:14px 30px;min-height:51px;font:inherit;font-size:15px;font-weight:800;cursor:pointer;transition:background .2s ease}
+.form-submit:not(:disabled):hover{background:#1d4ed8}
+.form-submit:disabled{background:#94a3b8;cursor:not-allowed}
+.form-state{background:#eef4ff;color:#174084;border-radius:9px;padding:12px 15px;font-size:13px;margin:18px 0 0}
+.form-state[data-state="error"]{background:#fff1f2;color:#9f1239}
+.form-state[data-state="success"]{background:#ecfdf5;color:#065f46}
+.form-state[hidden]{display:none}
+.form-privacy-note{font-size:12px;color:#667085;margin:14px 0 0}
+.form-honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.policy-card section+section{margin-top:33px;padding-top:20px;border-top:1px solid #edf2f7}
+.policy-card ul{padding-left:1.4em}
+.policy-date{font-size:12px;color:#667085;margin:0 0 25px}
+.site-footer .footer-links a:hover,.footer-links a:focus-visible{text-decoration:underline}
+.subpage-header-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #d3deed;border-radius:10px;color:#0b1220;font-weight:700;font-size:13px}
+.subpage-header-link:hover{background:#f3f6fa}
+@media(max-width:960px){.service-portfolio{margin-top:60px}.subpage-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.header-contact{font-size:12px;padding:8px 13px;min-height:42px}.service-portfolio{margin-top:45px}.service-portfolio-grid{grid-template-columns:1fr}.service-portfolio-card{padding:24px}.service-portfolio-card h4{font-size:23px}.subpage-main .subpage-hero{padding:53px 0 50px}.subpage-content{padding:28px 0 64px}.form-grid{grid-template-columns:1fr}.field-full{grid-column:auto}.subpage-card{padding:24px}.subpage-aside{padding:22px}}
+@media(max-width:350px){.brand{font-size:18px}.header-contact{font-size:11px;padding:8px 10px}.service-portfolio-card{padding:20px}}
+@media(prefers-reduced-motion:reduce){.service-portfolio-card a,.header-contact{transition:none}.service-portfolio-card a:hover{transform:none}}

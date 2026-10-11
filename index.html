@@ -15,6 +15,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="assets/hero-road.webp" as="image" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/site-extensions.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-THQMLL2YRE"></script>
   <script>
@@ -47,10 +48,11 @@
         <a href="#practice">Practice</a>
         <a href="#profile">Profile</a>
       </nav>
+      <a class="header-contact" href="/contact/" data-analytics-event="contact_open" data-service="general">お問い合わせ</a>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="hero" id="top">
       <div class="hero-image" aria-hidden="true"></div>
       <div class="hero-shade" aria-hidden="true"></div>
@@ -61,7 +63,7 @@
           <p class="hero-lead">経験と実践から得た知見をもとに、<br class="desktop-break">迷いや不安の先にある「次の一歩」を支えます。</p>
           <div class="hero-actions">
             <a class="button button-hero" href="#philosophy">Tom'sWorkersについて</a>
-            <a class="text-link hero-link" href="#service">主な取り組みを見る <span aria-hidden="true">↓</span></a>
+            <a class="text-link hero-link" href="#service">主な取り組みを見る</a>
           </div>
         </div>
         <div class="hero-signpost" aria-hidden="true">
@@ -138,7 +140,7 @@
               <span>引用元</span>
               <span>ChatGPT広告</span>
             </div>
-            <a class="button button-light" href="https://aibrandcheck.tomsworkers.com/" target="_blank" rel="noopener">AI BRAND CHECKを見る <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" href="https://aibrandcheck.tomsworkers.com/" target="_blank" rel="noopener">AI BRAND CHECKを見る</a>
           </div>
 
           <div class="abc-points" aria-label="AI BRAND CHECKで確認すること">
@@ -154,6 +156,40 @@
               <small>IMPROVE</small>
               <strong>次の改善へ<br>つなげる</strong>
             </div>
+          </div>
+        </div>
+
+        <div class="service-portfolio" aria-labelledby="portfolio-title">
+          <div class="service-portfolio-intro">
+            <p class="section-label section-label-light">SERVICES</p>
+            <h3 id="portfolio-title">AIとWebの課題を、<br>具体的な支援につなげる。</h3>
+            <p>AI BRAND CHECKのほかに、地域集客・広告・ランディングページ制作を支援しています。必要な領域からご相談いただけます。</p>
+          </div>
+          <div class="service-portfolio-grid">
+            <article class="service-portfolio-card">
+              <span class="service-category">LOCAL SEARCH</span>
+              <h4>MEO対策</h4>
+              <p>Googleマップでの情報整備、写真・口コミ対応方針、Webへの導線を整理します。</p>
+              <a href="/meo/" data-analytics-event="service_view" data-service="meo">MEO対策の詳細を見る</a>
+            </article>
+            <article class="service-portfolio-card">
+              <span class="service-category">AI ADVERTISING</span>
+              <h4>ChatGPT広告支援</h4>
+              <p>媒体の出稿条件を確認し、広告設計・LP・効果測定の進め方を検討します。</p>
+              <a href="/chatgpt-ads/" data-analytics-event="service_view" data-service="chatgpt-ads">ChatGPT広告支援の詳細を見る</a>
+            </article>
+            <article class="service-portfolio-card">
+              <span class="service-category">LANDING PAGE</span>
+              <h4>LP制作</h4>
+              <p>強みを伝える構成、スマートフォン表示、問い合わせ導線を整えたLPを制作します。</p>
+              <a href="/lp/" data-analytics-event="service_view" data-service="lp">LP制作の詳細を見る</a>
+            </article>
+            <article class="service-portfolio-card">
+              <span class="service-category">SEARCH ADVERTISING</span>
+              <h4>Google広告支援</h4>
+              <p>検索意図を起点に、広告文・予算・LP・計測をつなげた運用準備を支援します。</p>
+              <a href="/google-ads/" data-analytics-event="service_view" data-service="google-ads">Google広告支援の詳細を見る</a>
+            </article>
           </div>
         </div>
       </div>
@@ -180,9 +216,9 @@
             </div>
             <div>
               <h3>BREAK ONE<br>HUNDRED CLUB</h3>
-              <p>ゴルフを楽しむ大人のためのオリジナルブランド。商品企画、EC、SNS発信などを実際に運営しています。</p>
+              <p>ゴルフを楽しむ大人のためのオリジナルブランド「BOH GOLF」。商品企画とECショップ運営を通じて、自ら販売や改善に取り組んでいます。</p>
             </div>
-            <a href="https://shop.tomsworkers.com/" target="_blank" rel="noopener">オンラインショップを見る <span aria-hidden="true">↗</span></a>
+            <a href="https://shop.tomsworkers.com/" target="_blank" rel="noopener">オンラインショップを見る</a>
           </article>
 
           <article class="project-card project-line">
@@ -194,7 +230,7 @@
               <h3>LINE<br>STICKERS</h3>
               <p>ゴルフなどをテーマにしたオリジナルLINEスタンプを企画・制作し、シリーズとして展開しています。</p>
             </div>
-            <a href="https://line.me/S/shop/sticker/author/5391616" target="_blank" rel="noopener">LINEスタンプを見る <span aria-hidden="true">↗</span></a>
+            <a href="https://line.me/S/shop/sticker/author/5391616" target="_blank" rel="noopener">LINEスタンプを見る</a>
           </article>
         </div>
       </div>
@@ -237,7 +273,7 @@
           <div><dt>屋号</dt><dd>Tom'sWorkers</dd></div>
           <div><dt>所在地</dt><dd>兵庫県</dd></div>
           <div><dt>主な事業</dt><dd>AI・Web関連サービスの企画・運営 / 業務支援 / EC・デジタルコンテンツの企画・運営</dd></div>
-          <div><dt>主なサービス</dt><dd>AI BRAND CHECK</dd></div>
+          <div><dt>主なサービス</dt><dd>AI BRAND CHECK / MEO対策 / ChatGPT広告支援 / LP制作 / Google広告支援</dd></div>
           <div><dt>自社プロジェクト</dt><dd>BREAK ONE HUNDRED CLUB / LINEスタンプ</dd></div>
           <div><dt>資格</dt><dd>ウェブ解析士</dd></div>
         </dl>
@@ -253,8 +289,8 @@
         <div class="contact-copy">
           <p>「何から始めればいいか分からない」<br>「一度、考えを整理したい」</p>
           <p>そんな段階でも構いません。Tom'sWorkersがお役に立てそうなことがあれば、ご相談ください。</p>
-          <a class="button button-light" data-ga-contact="contact_button" href="mailto:info@tomsworkers.com?subject=Tom%27sWorkers%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%E3%83%BB%E5%B1%8B%E5%8F%B7%EF%BC%9A%0A%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%EF%BC%9A%0A">メールで問い合わせる <span aria-hidden="true">↗</span></a>
-          <p class="contact-email"><a data-ga-contact="contact_email" href="mailto:info@tomsworkers.com">info@tomsworkers.com</a></p>
+          <a class="button button-light" data-analytics-event="contact_open" data-service="general" href="/contact/">お問い合わせフォームへ</a>
+          <p class="contact-email">直接メールをご希望の場合：<a data-ga-contact="contact_email" href="mailto:info@tomsworkers.com">info@tomsworkers.com</a></p>
         </div>
       </div>
     </section>
@@ -269,6 +305,13 @@
       <div class="footer-links">
         <a href="#philosophy">Philosophy</a>
         <a href="#service">AI BRAND CHECK</a>
+        <a href="/meo/">MEO対策</a>
+        <a href="/chatgpt-ads/">ChatGPT広告支援</a>
+        <a href="/lp/">LP制作</a>
+        <a href="/google-ads/">Google広告支援</a>
+        <a href="/contact/">お問い合わせ</a>
+        <a href="/privacy/">プライバシーポリシー</a>
+        <a href="/terms/">サイト利用規約</a>
         <a href="https://shop.tomsworkers.com/" target="_blank" rel="noopener">BOH GOLF</a>
         <a href="https://line.me/S/shop/sticker/author/5391616" target="_blank" rel="noopener">LINE STICKERS</a>
       </div>
