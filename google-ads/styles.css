@@ -77,3 +77,16 @@
 /* 200% zoom / 200px narrow viewport: preserve the primary hero CTA without forcing the header wider. */
 @media(max-width:260px){.header-inner>.button-small{display:none}}
 @media(max-width:220px){.price{white-space:normal}.price span{display:block;margin-left:0;line-height:1.4}}
+
+
+/* 2026-10-11: Arrow-free CTAs with prominent accessible interaction states. */
+.button{transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.button:hover{background:#1d4ed8;box-shadow:0 12px 26px rgba(37,99,235,.28);transform:translateY(-2px)}
+.button:active{transform:translateY(0);box-shadow:0 4px 12px rgba(37,99,235,.2)}
+.button-light:hover{background:#eef5ff;color:#1e40af}
+.text-link{display:inline-flex;align-items:center;min-height:44px;border-bottom:2px solid #9babc4;padding-block:8px}
+.text-link:hover{border-color:#2563eb;color:#1d4ed8}
+.cross-links a{justify-content:flex-start;min-height:48px;transition:background-color .18s ease,border-color .18s ease}
+.cross-links a:hover{border-color:#a3c7fa}
+.source-link:hover{color:#1e40af;text-decoration-thickness:2px}
+@media(prefers-reduced-motion:reduce){.button,.cross-links a{transition:none}.button:hover,.button:active{transform:none}}
