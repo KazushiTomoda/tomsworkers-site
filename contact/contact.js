@@ -11,10 +11,10 @@
   const serviceNames = Object.freeze({
     'chatgpt-ads': 'ChatGPT広告支援',
     'web-ads': 'ウェブ広告支援',
-    'google-ads': 'ウェブ広告支援',
+    'google-ads': 'Google広告支援',
     'lp': 'LP制作',
     'meo': 'MEO対策',
-    'abc': 'AIブランド調査',
+    'abc': 'AI BRAND CHECK',
     'other': 'その他'
   });
   const params = new URLSearchParams(window.location.search);

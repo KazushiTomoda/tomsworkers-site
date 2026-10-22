@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="13" fill="#0f172a"/><path d="M11 18h42v9H37v28H27V27H11z" fill="#fff"/><circle cx="50" cy="47" r="7" fill="#06b6d4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Tom'sWorkers</title>
+  <desc id="desc">正式採用ロゴA「T×W共有軸型」</desc>
+  <rect width="256" height="256" rx="48" fill="#0F172A"/>
+  <path fill="#D59B36" fill-rule="nonzero" d="M 32.948393,108.675680 L 83.431759,228.000000 L 90.616396,228.000000 L 128.000000,160.709512 L 165.383604,228.000000 L 172.568241,228.000000 L 223.051607,108.675680 L 200.948393,99.324320 L 166.537781,180.658494 L 140.000000,132.890488 L 140.000000,56.000000 L 224.000000,56.000000 L 224.000000,32.000000 L 32.000000,32.000000 L 32.000000,56.000000 L 116.000000,56.000000 L 116.000000,132.890488 L 89.462219,180.658494 L 55.051607,99.324320 Z"/>
+</svg>
