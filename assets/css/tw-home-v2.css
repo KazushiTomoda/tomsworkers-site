@@ -273,3 +273,18 @@
  .home-redesign .tw-approach-heading .desktop-break{display:none}
  .home-redesign .tw-profile-tags li{font-size:12px}
 }
+/* Contact heading: natural mobile line breaks */
+.home-redesign .contact-title-mobile-break {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .home-redesign .contact-title-mobile-break {
+    display: block;
+  }
+
+  .home-redesign .contact-panel h2 {
+    font-size: clamp(27px, 7vw, 36px);
+    line-height: 1.4;
+  }
+}
