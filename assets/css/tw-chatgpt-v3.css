@@ -1,0 +1,225 @@
+@charset "UTF-8";
+:root{color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body.chatgpt-v3{margin:0;background:#fff;color:#20253a;font:400 16px/1.84 "Noto Sans JP",Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.chatgpt-v3 :is(h1,h2,h3,p,ul,ol){margin-top:0}
+.chatgpt-v3 :is(h1,h2,h3){line-height:1.44;letter-spacing:-.036em;overflow-wrap:anywhere}
+.chatgpt-v3 p,.chatgpt-v3 li{overflow-wrap:anywhere}
+.chatgpt-v3 a{color:inherit;text-decoration:none}
+.chatgpt-v3 a:hover{text-decoration:none}
+.chatgpt-v3 :is(a,summary,button):focus-visible{outline:3px solid #e9a938;outline-offset:4px}
+.chatgpt-v3 .container{width:min(1160px,calc(100% - 64px));margin-inline:auto}
+.chatgpt-v3 .skip-link{position:absolute;top:-100px;left:14px;background:#fff;color:#111425;z-index:200;padding:12px 18px;border-radius:8px}
+.chatgpt-v3 .skip-link:focus{top:12px}
+.chatgpt-v3 .site-header{position:sticky;top:0;z-index:60;background:rgba(16,19,34,.96);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px)}
+.chatgpt-v3 .header-inner{height:80px;display:flex;align-items:center;gap:22px}
+.chatgpt-v3 .brand{display:inline-flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.035em;white-space:nowrap;color:#fff;font-size:19px}
+.chatgpt-v3 .brand-mark{display:grid;place-items:center;width:42px;height:42px;background:#fff;border-radius:11px;flex:none}
+.chatgpt-v3 .brand-mark img{display:block;max-width:34px}
+.chatgpt-v3 .desktop-nav{display:flex;align-items:center;gap:clamp(12px,1.65vw,24px);margin-left:auto}
+.chatgpt-v3 .desktop-nav a{font-size:13px;color:#d5d6e3;font-weight:650;white-space:nowrap;transition:color .18s}
+.chatgpt-v3 .desktop-nav a:hover{color:#fff}
+.chatgpt-v3 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;border:1px solid transparent;border-radius:9px;font-weight:750;font-size:14px;text-align:center;line-height:1.5;transition:background .18s,border-color .18s,transform .18s,color .18s}
+.chatgpt-v3 .btn:hover{transform:translateY(-2px)}
+.chatgpt-v3 .btn-header{min-height:42px;padding:9px 18px;background:#ece7ff;color:#2c1c69;white-space:nowrap;font-size:13px}
+.chatgpt-v3 .btn-header:hover{background:#fff;color:#22164f}
+.chatgpt-v3 .mobile-menu{display:none;margin-left:auto;position:relative;color:#fff}
+.chatgpt-v3 .mobile-menu summary{cursor:pointer;list-style:none;border:1px solid rgba(255,255,255,.36);border-radius:8px;padding:8px 12px;min-height:44px;font-size:13px;font-weight:700}
+.chatgpt-v3 .mobile-menu summary::-webkit-details-marker{display:none}
+.chatgpt-v3 .hamburger{margin-left:5px}
+.chatgpt-v3 .mobile-menu nav{position:absolute;right:0;top:calc(100% + 12px);min-width:min(310px,calc(100vw - 28px));background:#20243c;border:1px solid #5a5576;border-radius:12px;padding:8px;box-shadow:0 20px 35px #0006}
+.chatgpt-v3 .mobile-menu nav a{display:block;padding:13px 14px;border-radius:7px;font-size:14px}
+.chatgpt-v3 .mobile-menu nav a:hover{background:#353958}
+.chatgpt-v3 .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 82% 30%,#3d315f 0%,transparent 42%),linear-gradient(125deg,#101321 2%,#1c1b37 55%,#151526 100%)}
+.chatgpt-v3 .hero:before{content:"";position:absolute;right:-180px;top:-220px;width:620px;height:620px;border:1px solid rgba(182,160,255,.14);border-radius:50%;box-shadow:0 0 0 90px rgba(149,119,255,.035),0 0 0 185px rgba(149,119,255,.025);pointer-events:none}
+.chatgpt-v3 .hero-layout{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(32px,6vw,90px);align-items:center;padding:clamp(88px,9vw,135px) 0 110px}
+.chatgpt-v3 .eyebrow{color:#5a428e;font:800 12px/1.5 Inter,"Noto Sans JP",sans-serif;letter-spacing:.16em;margin-bottom:22px}
+.chatgpt-v3 .eyebrow-light{color:#cbbaff}
+.chatgpt-v3 .eyebrow-line{display:inline-block;width:24px;height:1px;background:#b8a3f4;vertical-align:middle;margin-right:8px}
+.chatgpt-v3 .hero h1{font-size:clamp(37px,4.55vw,64px);line-height:1.31;letter-spacing:-.055em;margin:0 0 28px;font-weight:850}
+.chatgpt-v3 .hero h1 em{font-style:normal;color:#c4aeff}
+.chatgpt-v3 .hero-lead{color:#e0deea;font-size:clamp(15px,1.35vw,17px);line-height:2.05;margin-bottom:30px}
+.chatgpt-v3 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.chatgpt-v3 .btn-primary{background:#bda4ff;color:#1a1431;box-shadow:0 9px 24px rgba(89,61,151,.2)}
+.chatgpt-v3 .btn-primary:hover{background:#d9caff;color:#171127}
+.chatgpt-v3 .btn-ghost{border-color:#807994;color:#fff;background:transparent}
+.chatgpt-v3 .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#c7bbec;color:#fff}
+.chatgpt-v3 .hero-fine{font-size:12px;color:#bcb9cd;line-height:1.9;margin:0;max-width:620px}
+.chatgpt-v3 .hero-visual{position:relative;background:linear-gradient(145deg,rgba(50,45,83,.96),rgba(31,30,54,.98));border:1px solid rgba(205,187,255,.28);border-radius:20px;padding:30px;box-shadow:0 30px 65px rgba(0,0,0,.23)}
+.chatgpt-v3 .visual-heading{font-size:13px;font-weight:800;letter-spacing:.04em;color:#eee9ff;margin-bottom:16px}
+.chatgpt-v3 .visual-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#d4bcff;box-shadow:0 0 0 5px rgba(212,188,255,.12);margin-right:10px}
+.chatgpt-v3 .visual-row{display:flex;align-items:center;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.12)}
+.chatgpt-v3 .visual-row>span{font:800 13px Inter,sans-serif;color:#bda4ff}
+.chatgpt-v3 .visual-row>div{flex:1;min-width:0}
+.chatgpt-v3 .visual-row strong{display:block;font-size:15px}
+.chatgpt-v3 .visual-row small{display:block;color:#c3c0d6;font-size:12px;margin-top:2px}
+.chatgpt-v3 .visual-row b{font-size:14px;color:#d2bcff}
+.chatgpt-v3 .visual-footer{padding-top:16px;font-size:12px;color:#d1c6ec;text-align:right}
+.chatgpt-v3 .section{padding:clamp(76px,8vw,116px) 0}
+.chatgpt-v3 .section-tint{background:#f7f6fa}
+.chatgpt-v3 .section-intro{max-width:730px;margin-bottom:42px}
+.chatgpt-v3 .section-intro h2,.chatgpt-v3 .availability-grid h2,.chatgpt-v3 .distinction h2,.chatgpt-v3 .faq-grid h2,.chatgpt-v3 .contact-section h2{font-size:clamp(29px,3vw,43px);margin-bottom:20px;color:#202239;font-weight:850}
+.chatgpt-v3 .section-intro>p:last-child,.chatgpt-v3 .availability-grid>div>p,.chatgpt-v3 .faq-grid>div>p{color:#565d70;font-size:15px;line-height:2}
+.chatgpt-v3 .section-intro-center{text-align:center;margin-left:auto;margin-right:auto}
+.chatgpt-v3 .feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.chatgpt-v3 .feature-card{padding:34px 30px;border:1px solid #e4e0ed;border-radius:14px;background:#fff;box-shadow:0 12px 35px rgba(22,21,44,.035)}
+.chatgpt-v3 .feature-no{display:block;font:800 12px Inter,sans-serif;color:#7855b6;margin-bottom:25px}
+.chatgpt-v3 .feature-card h3{font-size:20px;margin-bottom:14px}
+.chatgpt-v3 .feature-card p{font-size:14px;color:#5b6170;margin-bottom:0}
+.chatgpt-v3 .availability-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:8%;align-items:center}
+.chatgpt-v3 .availability-grid h2{margin-bottom:24px}
+.chatgpt-v3 .source-note{font-size:12px!important;color:#686c78!important}
+.chatgpt-v3 .text-link{display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid #8063b9;color:#563c91;font-weight:800;font-size:14px;padding-bottom:5px}
+.chatgpt-v3 .text-link:hover{color:#2d1d5c;border-color:#2d1d5c}
+.chatgpt-v3 .availability-panel{background:#fff;border:1px solid #e5dff0;border-radius:18px;padding:34px;box-shadow:0 16px 34px rgba(24,18,52,.05)}
+.chatgpt-v3 .panel-kicker{font-size:13px;color:#7052a7;font-weight:800}
+.chatgpt-v3 .check-list{list-style:none;margin:0;padding:0}
+.chatgpt-v3 .check-list li{position:relative;padding-left:25px;margin:0 0 13px;font-size:14px;color:#333849}
+.chatgpt-v3 .check-list li:before{content:'✓';position:absolute;left:0;top:0;color:#62469e;font-weight:900}
+.chatgpt-v3 .availability-panel ul{margin-top:24px;margin-bottom:20px}
+.chatgpt-v3 .availability-panel>p{border-top:1px solid #ebe7f0;padding-top:17px;margin:0;font-size:12px;color:#666b78}
+.chatgpt-v3 .scope-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.chatgpt-v3 .scope-grid article{border:1px solid #e6e1ee;background:#fff;padding:28px 24px;border-radius:12px}
+.chatgpt-v3 .scope-grid article>span{font:800 11px Inter,sans-serif;color:#6c4f9c;letter-spacing:.06em}
+.chatgpt-v3 .scope-grid h3{font-size:18px;margin:22px 0 12px}
+.chatgpt-v3 .scope-grid p{font-size:13px;color:#5d6475;margin:0}
+.chatgpt-v3 .scope-note{margin-top:28px;border-left:4px solid #7d60b9;background:#f6f3fa;padding:24px 28px;border-radius:0 12px 12px 0}
+.chatgpt-v3 .scope-note strong{font-size:15px}
+.chatgpt-v3 .scope-note p{margin:8px 0 0;font-size:13px;color:#535a6a}
+.chatgpt-v3 .section-pricing{background:#f6f5fa}
+.chatgpt-v3 .pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.chatgpt-v3 .plan-card{position:relative;display:flex;flex-direction:column;padding:32px 28px;background:#fff;border:1px solid #ded8e9;border-radius:16px;box-shadow:0 14px 36px rgba(28,21,54,.04)}
+.chatgpt-v3 .plan-featured{border:2px solid #6e4da5;padding:31px 27px;box-shadow:0 18px 40px rgba(82,58,140,.13)}
+.chatgpt-v3 .plan-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:25px;margin-bottom:19px}
+.chatgpt-v3 .plan-index{font:800 13px Inter,sans-serif;color:#7c61aa}
+.chatgpt-v3 .plan-badge{font-size:11px;background:#eee7fc;color:#523484;padding:5px 10px;border-radius:30px;font-weight:800}
+.chatgpt-v3 .plan-card h3{font-size:21px;line-height:1.55;min-height:68px;margin-bottom:9px}
+.chatgpt-v3 .plan-lead{font-size:13px;color:#6b6876;min-height:44px;margin-bottom:20px}
+.chatgpt-v3 .plan-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:6px}
+.chatgpt-v3 .plan-price strong{font:800 clamp(27px,2.7vw,37px)/1.3 Inter,"Noto Sans JP",sans-serif;letter-spacing:-.04em;color:#29223f}
+.chatgpt-v3 .plan-price strong span{font-size:15px;letter-spacing:0;margin-left:2px}
+.chatgpt-v3 .plan-price small{font-size:12px;color:#6d6879}
+.chatgpt-v3 .plan-scope{font-size:12px;color:#635f70;padding-bottom:22px;border-bottom:1px solid #eae6f0;margin-bottom:24px}
+.chatgpt-v3 .plan-card ul{margin-bottom:15px}
+.chatgpt-v3 .plan-note{font-size:12px;color:#666577;margin-top:auto;padding-top:12px;margin-bottom:18px}
+.chatgpt-v3 .btn-outline{background:#27213f;color:#fff;border-color:#27213f}
+.chatgpt-v3 .btn-outline:hover{background:#49356f;border-color:#49356f;color:#fff}
+.chatgpt-v3 .plan-featured .btn-outline{background:#68499f;border-color:#68499f;color:#fff}
+.chatgpt-v3 .plan-featured .btn-outline:hover{background:#4f347d;border-color:#4f347d}
+.chatgpt-v3 .plan-action{margin-top:auto;width:100%;min-height:50px;font-size:13px;padding:10px 8px}
+.chatgpt-v3 .pricing-footer{margin:24px 0 46px;border:1px solid #e3deeb;background:#fff;padding:24px 26px;border-radius:12px}
+.chatgpt-v3 .pricing-footer p{font-size:13px;color:#575b69;margin:0}
+.chatgpt-v3 .pricing-footer p+p{margin-top:7px}
+.chatgpt-v3 .comparison{padding:32px 32px 24px;background:#fff;border:1px solid #e4e0eb;border-radius:16px}
+.chatgpt-v3 .comparison h3{font-size:21px;margin-bottom:20px}
+.chatgpt-v3 .table-wrap{overflow-x:auto;max-width:100%;border-radius:8px;border:1px solid #e5e1ed}
+.chatgpt-v3 table{border-collapse:collapse;width:100%;min-width:690px;text-align:left;font-size:13px}
+.chatgpt-v3 th,.chatgpt-v3 td{padding:14px 16px;border-bottom:1px solid #eae7ef;vertical-align:top}
+.chatgpt-v3 thead th{background:#2a2540;color:#fff;font-weight:750}
+.chatgpt-v3 tbody th{background:#f9f8fc;color:#2f2a3d;width:29%}
+.chatgpt-v3 tbody tr:last-child :is(th,td){border-bottom:0}
+.chatgpt-v3 .table-hint{font-size:12px;color:#666979;margin:12px 0 0}
+.chatgpt-v3 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.chatgpt-v3 .distinction{background:#181728;color:#fff}
+.chatgpt-v3 .distinction-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:9%;align-items:center}
+.chatgpt-v3 .distinction h2{color:#fff}
+.chatgpt-v3 .distinction p{color:#d7d2e2;font-size:15px}
+.chatgpt-v3 .light-link{color:#e0d1ff;border-color:#c1a7f3;margin-top:12px}
+.chatgpt-v3 .light-link:hover{color:#fff;border-color:#fff}
+.chatgpt-v3 .distinction-card{padding:35px;background:#27233d;border:1px solid #5a4e76;border-radius:16px}
+.chatgpt-v3 .distinction-card h3{font-size:20px;color:#fff}
+.chatgpt-v3 .distinction-card ul{padding-left:21px;margin:20px 0}
+.chatgpt-v3 .distinction-card li{font-size:14px;color:#e0daeb;margin-bottom:11px}
+.chatgpt-v3 .distinction-card a{color:#e4d2ff;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.chatgpt-v3 .flow-list{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0;list-style:none}
+.chatgpt-v3 .flow-list li{position:relative;border-top:2px solid #a28acb;padding:25px 8px 0 0}
+.chatgpt-v3 .flow-list li>span{display:block;font:800 13px Inter,sans-serif;color:#785ba8;margin-bottom:20px}
+.chatgpt-v3 .flow-list h3{font-size:17px;margin-bottom:12px}
+.chatgpt-v3 .flow-list p{font-size:13px;color:#5f6472}
+.chatgpt-v3 .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%}
+.chatgpt-v3 .faq-grid h2{margin-bottom:16px}
+.chatgpt-v3 .faq-item{background:#fff;border:1px solid #e5e0ed;border-radius:11px;margin-bottom:10px;overflow:hidden}
+.chatgpt-v3 .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 22px;font-size:14px;font-weight:800;line-height:1.65}
+.chatgpt-v3 .faq-item summary::-webkit-details-marker{display:none}
+.chatgpt-v3 .faq-icon{width:22px;height:22px;flex:none;position:relative}
+.chatgpt-v3 .faq-icon:before,.chatgpt-v3 .faq-icon:after{content:"";position:absolute;top:10px;left:4px;width:14px;height:2px;background:#604491}
+.chatgpt-v3 .faq-icon:after{transform:rotate(90deg);transition:transform .18s}
+.chatgpt-v3 .faq-item[open] .faq-icon:after{transform:rotate(0)}
+.chatgpt-v3 .faq-answer{padding:0 22px 20px;color:#5b6070;font-size:13px}
+.chatgpt-v3 .faq-answer p{margin:0}
+.chatgpt-v3 .contact-section{padding:78px 0;background:linear-gradient(110deg,#30264f,#1d1b32);color:#fff}
+.chatgpt-v3 .contact-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}
+.chatgpt-v3 .contact-section h2{color:#fff;margin-bottom:15px}
+.chatgpt-v3 .contact-section p{color:#ded8eb;margin-bottom:0;font-size:14px}
+.chatgpt-v3 .contact-action{text-align:right}
+.chatgpt-v3 .btn-large{min-width:min(100%,280px);min-height:55px}
+.chatgpt-v3 .contact-action p{font-size:12px;margin-top:13px}
+.chatgpt-v3 .site-footer{background:#111322;color:#c9cbd9;padding:65px 0 26px}
+.chatgpt-v3 .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:45px;padding-bottom:48px}
+.chatgpt-v3 .footer-brand p{font-size:13px;color:#c9c6db;margin:20px 0 12px}
+.chatgpt-v3 .footer-brand small{font-size:12px;color:#a8aabd}
+.chatgpt-v3 .site-footer nav{display:flex;flex-direction:column;gap:12px}
+.chatgpt-v3 .site-footer nav>span{font-size:11px;letter-spacing:.1em;font-weight:800;color:#a994db;margin-bottom:8px}
+.chatgpt-v3 .site-footer nav a{font-size:13px}
+.chatgpt-v3 .site-footer nav a:hover{color:#fff}
+.chatgpt-v3 .footer-bottom{border-top:1px solid #303245;padding-top:22px;display:flex;justify-content:space-between;font-size:12px}
+@media(max-width:980px){.chatgpt-v3 .desktop-nav,.chatgpt-v3 .btn-header{display:none}.chatgpt-v3 .mobile-menu{display:block}.chatgpt-v3 .hero-layout{grid-template-columns:1fr 1fr;gap:28px}.chatgpt-v3 .scope-grid{grid-template-columns:repeat(2,1fr)}.chatgpt-v3 .pricing-grid{gap:12px}.chatgpt-v3 .plan-card{padding:24px 19px}.chatgpt-v3 .plan-featured{padding:23px 18px}.chatgpt-v3 .plan-card h3{font-size:18px}.chatgpt-v3 .plan-price strong{font-size:28px}}
+@media(max-width:760px){.chatgpt-v3 .container{width:min(100% - 36px,1160px)}.chatgpt-v3 .header-inner{height:68px}.chatgpt-v3 .brand{font-size:17px}.chatgpt-v3 .brand-mark{width:38px;height:38px}.chatgpt-v3 .hero-layout{grid-template-columns:1fr;padding:74px 0 75px;gap:35px}.chatgpt-v3 .hero-visual{max-width:600px;width:100%;padding:25px}.chatgpt-v3 .hero h1{font-size:clamp(34px,8vw,47px)}.chatgpt-v3 .feature-grid,.chatgpt-v3 .pricing-grid{grid-template-columns:1fr}.chatgpt-v3 .feature-card{padding:26px}.chatgpt-v3 .availability-grid,.chatgpt-v3 .distinction-grid,.chatgpt-v3 .faq-grid,.chatgpt-v3 .contact-grid{grid-template-columns:1fr;gap:30px}.chatgpt-v3 .scope-grid{grid-template-columns:1fr 1fr}.chatgpt-v3 .plan-card,.chatgpt-v3 .plan-featured{padding:27px}.chatgpt-v3 .plan-card h3,.chatgpt-v3 .plan-lead{min-height:0}.chatgpt-v3 .plan-card h3{font-size:21px}.chatgpt-v3 .plan-price strong{font-size:36px}.chatgpt-v3 .plan-card ul{margin-bottom:15px}.chatgpt-v3 .flow-list{grid-template-columns:1fr 1fr}.chatgpt-v3 .contact-action{text-align:left}.chatgpt-v3 .footer-top{grid-template-columns:1fr 1fr;gap:35px}.chatgpt-v3 .footer-brand{grid-column:1/-1}}
+@media(max-width:480px){.chatgpt-v3 .container{width:calc(100% - 32px)}.chatgpt-v3 .section{padding:67px 0}.chatgpt-v3 .hero-layout{padding:65px 0}.chatgpt-v3 .hero-actions{flex-direction:column;align-items:stretch}.chatgpt-v3 .hero-actions .btn{width:100%}.chatgpt-v3 .hero h1{font-size:clamp(32px,9vw,39px)}.chatgpt-v3 .desktop-break{display:none}.chatgpt-v3 .visual-row{padding:15px 0}.chatgpt-v3 .scope-grid,.chatgpt-v3 .flow-list{grid-template-columns:1fr}.chatgpt-v3 .scope-grid article{padding:22px}.chatgpt-v3 .comparison{padding:20px 14px}.chatgpt-v3 .plan-card,.chatgpt-v3 .plan-featured{padding:24px}.chatgpt-v3 .availability-panel,.chatgpt-v3 .distinction-card{padding:24px}.chatgpt-v3 .footer-top{grid-template-columns:1fr}.chatgpt-v3 .footer-brand{grid-column:auto}.chatgpt-v3 .footer-bottom{gap:15px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chatgpt-v3 .btn,.chatgpt-v3 .desktop-nav a,.chatgpt-v3 .faq-icon:after{transition:none!important}.chatgpt-v3 .btn:hover{transform:none}}
+
+/* v4.1 | Responsive pricing and reachable keyboard/touch targets. Scoped to this LP. */
+.chatgpt-v3 .brand{min-height:44px}
+.chatgpt-v3 .desktop-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 4px}
+.chatgpt-v3 .btn-header{min-height:44px}
+.chatgpt-v3 .text-link{min-height:44px}
+.chatgpt-v3 .distinction-card a{display:inline-flex;align-items:center;min-height:44px}
+.chatgpt-v3 .site-footer nav{gap:4px}
+.chatgpt-v3 .site-footer nav a{display:inline-flex;align-items:center;min-height:44px;padding:9px 0}
+.chatgpt-v3 .footer-bottom a{display:inline-flex;align-items:center;min-height:44px}
+@media (min-width:761px) and (max-width:980px){
+  .chatgpt-v3 .pricing-grid{grid-template-columns:minmax(0,1fr);max-width:620px;margin-inline:auto;gap:18px}
+  .chatgpt-v3 .plan-card,.chatgpt-v3 .plan-featured{padding:30px}
+  .chatgpt-v3 .plan-card h3,.chatgpt-v3 .plan-lead{min-height:0}
+  .chatgpt-v3 .plan-card h3{font-size:21px}
+}
+.chatgpt-v3 .desktop-nav a{min-width:44px}
+
+/* v4.2 | Prevent isolated final glyphs in headings without changing visible copy. */
+.chatgpt-v3 :is(h2,h3){text-wrap:balance}
+.chatgpt-v3 .heading-phrase{display:inline-block}
+
+/* v4.3 | Related five-service navigation; no decorative promise strip. */
+.chatgpt-v3 .hero h1 .heading-phrase{display:inline-block}
+.chatgpt-v3 .hero h1 .heading-phrase:last-child{color:#c4aeff}
+.chatgpt-v3 .related-services{background:#f7f5fb}
+.chatgpt-v3 .related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.chatgpt-v3 .related-card{min-width:0;display:flex;flex-direction:column;gap:10px;min-height:174px;padding:25px 24px;background:#fff;border:1px solid #ddd5ed;border-radius:15px;text-decoration:none;color:#22233b;transition:border-color .15s,box-shadow .15s}
+.chatgpt-v3 a.related-card:hover{border-color:#6f539e;box-shadow:0 6px 24px rgba(45,33,77,.09)}
+.chatgpt-v3 a.related-card:focus-visible{outline:3px solid #b07cde;outline-offset:3px}
+.chatgpt-v3 .related-card .related-name{font-size:15px;font-weight:800;color:#342652;line-height:1.55}
+.chatgpt-v3 .related-card strong{font-size:13px;font-weight:550;line-height:1.8;color:#525366}
+.chatgpt-v3 .related-card .related-action{font-size:12px;font-weight:750;color:#634c92;margin-top:auto}
+.chatgpt-v3 .related-card.current-service{background:#f0ebf8;border-color:#c6b9dc}
+.chatgpt-v3 .related-card.current-service .current-tag{color:#51426d}
+@media(max-width:980px){.chatgpt-v3 .related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.chatgpt-v3 .related-grid{grid-template-columns:1fr;gap:12px}.chatgpt-v3 .related-card{min-height:132px;padding:21px 23px;gap:7px}}
+@media(prefers-reduced-motion:reduce){.chatgpt-v3 .related-card{transition:none}}
+
+/* v4.4 | Local phrase integrity and compact tablet grids. */
+.chatgpt-v3 .phrase-keep{white-space:nowrap}
+.chatgpt-v3 .faq-question-text{display:block;min-width:0;flex:1}
+.chatgpt-v3 :is(.feature-card p,.scope-grid p,.faq-item summary){text-wrap:balance}
+@media (min-width:761px) and (max-width:1100px){
+ .chatgpt-v3 .scope-grid,.chatgpt-v3 .flow-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:761px) and (max-width:900px){
+ .chatgpt-v3 .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .chatgpt-v3 .feature-grid>.feature-card:last-child{grid-column:1/-1}
+}
+@media (max-width:480px){
+ .chatgpt-v3 :is(.scope-grid p,.flow-list p,.related-card strong){font-size:14px}
+ .chatgpt-v3 :is(.hero-fine,.plan-note,.table-hint){font-size:13px}
+ .chatgpt-v3 .source-note{font-size:13px!important}
+}
